@@ -15,12 +15,14 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* Classes*/
+/* CLASSES*/
+
+/* Banner*/
 .banner {
   background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
   url(https://source.unsplash.com/random/1000x500);
   background-size: cover;
@@ -32,16 +34,21 @@ h1, h2 {
 }
 .banner .container {
   margin: auto 0;
-  font-size: 24px;
+  font-size: 20px;
 }
 .banner .container h1, .banner .container h2 {
   padding: 10px 0;
 }
+.banner .container h2 {
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+/* All containers*/
 .container {
   width: 60%;
   margin: 40px auto;
 }
-
 .container h2 {
   padding-top: 20px;
   font-size: 28px;
@@ -65,7 +72,7 @@ h1, h2 {
   background-image: linear-gradient(to bottom, rgb(255, 101, 139), rgba(255, 101, 139, 1));
 }
 
-
+/* Responsiveness */
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
